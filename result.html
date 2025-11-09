@@ -19,12 +19,16 @@
   <p id="score"></p>
 
   <script>
-    // get number of checked items from localStorage
-    var score = parseInt(localStorage.getItem("score")) || 0;
+    // get the stored score from localStorage
+    var checkedItems = localStorage.getItem("score");
 
-    // calculate purity score (100 - checked items)
-    var purityScore = 100 - score;
+    // convert it to a number
+    var numChecked = Number(checkedItems) || 0;
 
+    // calculate purity
+    var purityScore = 100 - numChecked;
+
+    // display result
     document.getElementById("score").innerText = "Your McGill Purity Score is: " + purityScore;
   </script>
 </body>
