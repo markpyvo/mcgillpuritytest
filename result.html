@@ -4,7 +4,12 @@
   <meta charset="UTF-8">
   <title>McGill Purity Test Result</title>
   <style>
-    body { font-family: Georgia, "Times New Roman", serif; background-color:#fcedc7; text-align:center; padding:50px;}
+    body { 
+      font-family: Georgia, "Times New Roman", serif; 
+      background-color:#fcedc7; 
+      text-align:center; 
+      padding:50px;
+    }
     h1 { color:#b5121b; }
     p { font-size: 1.2em; }
   </style>
@@ -14,8 +19,13 @@
   <p id="score"></p>
 
   <script>
-    var score = localStorage.getItem("score");
-    document.getElementById("score").innerText = "You checked " + score + " items!";
+    // get number of checked items from localStorage
+    var score = parseInt(localStorage.getItem("score")) || 0;
+
+    // calculate purity score (100 - checked items)
+    var purityScore = 100 - score;
+
+    document.getElementById("score").innerText = "Your McGill Purity Score is: " + purityScore;
   </script>
 </body>
 </html>
