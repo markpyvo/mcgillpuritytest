@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>McGill Purity Test Result</title>
+  <style>
+    body { font-family: Georgia, "Times New Roman", serif; background-color:#fcedc7; text-align:center; padding:50px;}
+    h1 { color:#b5121b; }
+    p { font-size: 1.2em; }
+  </style>
+</head>
+<body>
+  <h1>Your McGill Purity Score</h1>
+  <p id="score"></p>
+
+  <script>
+    var score = localStorage.getItem("score");
+    document.getElementById("score").innerText = "You checked " + score + " items!";
+  </script>
+</body>
+</html>
