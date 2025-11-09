@@ -7,15 +7,18 @@
   
   <style>
     body {
-      font-family: Georgia, "Times New Roman", serif;
-      background-color: #fff;
-      color: #222;
+      background-color: #fcedc7; /* cream background */
       margin: 0;
-      padding: 0;
+      font-family: "Times New Roman", Times, serif;
+      position: relative;
       background-image: url("mcgill-university-1-logo-png-transparent.png");
-      background-repeat: no-repeat;
-      background-position: center 40px;
-      background-size: 120px;
+      background-repeat: repeat;               /* repeats the logo */
+      background-position: center;
+      background-size: 120px auto;            /* adjust logo size */
+    
+      /* Create tilted, semi-transparent effect */
+      transform: rotate(-20deg); /* tilts the whole body */
+      opacity: 0.05;   
     }
 
     .container {
