@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waterloo Purity Test</title>
+
+    <style>
+        body {
+            
+            background-image: url('goose5.jpg');
+            background-size: 150px;
+        }
+
+        h1 {
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <center><h1>Waterloo Purity Test</h1></center>
+    <p>The Purity Test will assess how much of a Waterloo student you truly are and can be used to track the evolution of a student at the University of Waterloo.
+        Click on every item that you have done:
+    </p>
+    <form action="result.html">
+        <ol>
+            <li>
+                <input type="checkbox">
+                <label>Go to or have graduated from UWaterloo</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Got food from Lazeez</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Got 7 lines from Lazeez</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Talked to a CS kid</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Talked to a Eng kid</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Not shower for a week</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Pulled an all nighter for school</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Failed an exam</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Failed a course</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Felt dumber than everyone else</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Cheat on an exam</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Thought about switching programs</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Thought about switching schools</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Complained about your program's gender ratio</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Gotten Policy 71'd</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Gotten fucked by eduroam</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Talked about mathematical proofs in your free time</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Dreamt about solving a math problem</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Discussed the superiority of Eng over other programs</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Done LeetCode</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Gotten triggered by Outlook notifications</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Taken someone else's clothes out of the drying machine</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Play Valorant or League</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Convinced others to play Valorant or League</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Watch anime</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Gotten attacked by a goose</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Attacked a goose</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Gotten confronted by a homeless person in the plaza</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>"Fuck PD"</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Thanked Mr. Goose</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Gone to a party to network</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Gone to an actually party (hint: it's not at Waterloo)</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Partied on St Patty's Day</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Have a LinkedIn account</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Crossed the railroad illegally when the train was coming</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Gone ABG hunting on campus</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Thought about a girl</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Looked at a girl</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Stared at girls at the gym</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Smiled at a girl</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Spoken to a girl</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Touched a girl</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Hold hands romantically (your homies don't count)</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Touched a girl's lips</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Touched a girl's "lips"</label>
+            </li>
+        </ol>
+        <button type="submit" id="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    <script>
+        
+        document.getElementById("submit").addEventListener("click", function () {
+            var score = document.querySelectorAll('input[type="checkbox"]:checked').length;
+            localStorage.setItem("score", score);
+        });
+    </script>
+</body>
+</html>
