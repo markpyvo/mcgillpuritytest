@@ -1,221 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>McGill Purity Test</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>McGill Purity Test</title>
 
-    <style>
-        body {
-            
-            background-image: url('mcgill-university-1-logo-png-transparent.png');
-            background-size: 150px;
-        }
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background-color: #fff;
+      color: #222;
+      margin: 0;
+      padding: 0;
+      background-image: url("mcgill-university-1-logo-png-transparent.png");
+      background-repeat: no-repeat;
+      background-position: center 40px;
+      background-size: 120px;
+    }
 
-        h1 {
-            margin: auto;
-        }
+    .container {
+      max-width: 700px;
+      margin: 180px auto 60px auto;
+      padding: 0 20px;
+      text-align: left;
+    }
 
-    </style>
+    h1 {
+      text-align: center;
+      color: #b5121b; /* McGill red */
+      font-size: 2.2em;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      text-align: center;
+      font-weight: normal;
+      font-size: 1.1em;
+      margin-top: 5px;
+      color: #555;
+    }
+
+    p {
+      text-align: justify;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+
+    ol {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    label {
+      margin-left: 6px;
+    }
+
+    button {
+      background-color: #b5121b;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 20px;
+      margin-right: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    button:hover {
+      background-color: #8e0e14;
+    }
+
+    footer {
+      text-align: center;
+      color: #888;
+      font-size: 0.9em;
+      margin-top: 50px;
+    }
+  </style>
 </head>
+
 <body>
-    <center><h1> McGill </h1> Purity Test</h1></center>
-    <p>The Purity Test will assess how much of a McGill student you truly are and can be used to track the evolution of a student at the University of McGill.
-        Click on every item that you have done:
+  <div class="container">
+    <h1>McGill Purity Test</h1>
+    <h2>The unofficial student edition</h2>
+
+    <p>
+      The McGill Purity Test will assess how much of a McGill student you truly are and can be used to track
+      the evolution of a student at the University of McGill. Check all the items that apply to you:
     </p>
+
     <form action="result.html">
-        <ol>
-            <li>
-                <input type="checkbox">
-                <label>Go to or have graduated from UWaterloo</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Got food from Lazeez</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Got 7 lines from Lazeez</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Talked to a CS kid</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Talked to a Eng kid</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Not shower for a week</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Pulled an all nighter for school</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Failed an exam</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Failed a course</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Felt dumber than everyone else</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Cheat on an exam</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Thought about switching programs</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Thought about switching schools</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Complained about your program's gender ratio</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Gotten Policy 71'd</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Gotten fucked by eduroam</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Talked about mathematical proofs in your free time</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Dreamt about solving a math problem</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Discussed the superiority of Eng over other programs</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Done LeetCode</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Gotten triggered by Outlook notifications</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Taken someone else's clothes out of the drying machine</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Play Valorant or League</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Convinced others to play Valorant or League</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Watch anime</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Gotten attacked by a goose</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Attacked a goose</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Gotten confronted by a homeless person in the plaza</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>"Fuck PD"</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Thanked Mr. Goose</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Gone to a party to network</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Gone to an actually party (hint: it's not at Waterloo)</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Partied on St Patty's Day</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Have a LinkedIn account</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Crossed the railroad illegally when the train was coming</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Gone ABG hunting on campus</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Thought about a girl</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Looked at a girl</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Stared at girls at the gym</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Smiled at a girl</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Spoken to a girl</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Touched a girl</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Hold hands romantically (your homies don't count)</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Touched a girl's lips</label>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>Touched a girl's "lips"</label>
-            </li>
-        </ol>
-        <button type="submit" id="submit">Submit</button>
-        <button type="reset">Reset</button>
+      <ol>
+        <li><input type="checkbox" /> <label>Go to or have graduated from McGill</label></li>
+        <li><input type="checkbox" /> <label>Got food from Lazeez</label></li>
+        <li><input type="checkbox" /> <label>Got 7 lines from Lazeez</label></li>
+        <li><input type="checkbox" /> <label>Talked to a CS kid</label></li>
+        <li><input type="checkbox" /> <label>Talked to an Eng kid</label></li>
+        <li><input type="checkbox" /> <label>Not showered for a week</label></li>
+        <li><input type="checkbox" /> <label>Pulled an all-nighter for school</label></li>
+        <li><input type="checkbox" /> <label>Failed an exam</label></li>
+        <li><input type="checkbox" /> <label>Failed a course</label></li>
+        <li><input type="checkbox" /> <label>Felt dumber than everyone else</label></li>
+        <li><input type="checkbox" /> <label>Cheated on an exam</label></li>
+        <li><input type="checkbox" /> <label>Thought about switching programs</label></li>
+        <li><input type="checkbox" /> <label>Thought about switching schools</label></li>
+        <li><input type="checkbox" /> <label>Complained about your program's gender ratio</label></li>
+        <li><input type="checkbox" /> <label>Gotten Policy 71'd</label></li>
+        <li><input type="checkbox" /> <label>Gotten screwed by eduroam</label></li>
+        <li><input type="checkbox" /> <label>Talked about mathematical proofs in your free time</label></li>
+        <li><input type="checkbox" /> <label>Dreamt about solving a math problem</label></li>
+        <li><input type="checkbox" /> <label>Discussed the superiority of Eng over other programs</label></li>
+        <li><input type="checkbox" /> <label>Done LeetCode</label></li>
+        <li><input type="checkbox" /> <label>Gotten triggered by Outlook notifications</label></li>
+        <li><input type="checkbox" /> <label>Taken someone else's clothes out of the drying machine</label></li>
+        <li><input type="checkbox" /> <label>Play Valorant or League</label></li>
+        <li><input type="checkbox" /> <label>Convinced others to play Valorant or League</label></li>
+        <li><input type="checkbox" /> <label>Watch anime</label></li>
+        <li><input type="checkbox" /> <label>Gotten attacked by a goose</label></li>
+        <li><input type="checkbox" /> <label>Attacked a goose</label></li>
+        <li><input type="checkbox" /> <label>Gotten confronted by a homeless person in the plaza</label></li>
+        <li><input type="checkbox" /> <label>"Fuck PD"</label></li>
+        <li><input type="checkbox" /> <label>Thanked Mr. Goose</label></li>
+        <li><input type="checkbox" /> <label>Gone to a party to network</label></li>
+        <li><input type="checkbox" /> <label>Gone to an actual party (hint: it's not at Waterloo)</label></li>
+        <li><input type="checkbox" /> <label>Partied on St. Patty's Day</label></li>
+        <li><input type="checkbox" /> <label>Have a LinkedIn account</label></li>
+        <li><input type="checkbox" /> <label>Crossed the railroad illegally when the train was coming</label></li>
+        <li><input type="checkbox" /> <label>Gone ABG hunting on campus</label></li>
+        <li><input type="checkbox" /> <label>Thought about a girl</label></li>
+        <li><input type="checkbox" /> <label>Looked at a girl</label></li>
+        <li><input type="checkbox" /> <label>Stared at girls at the gym</label></li>
+        <li><input type="checkbox" /> <label>Smiled at a girl</label></li>
+        <li><input type="checkbox" /> <label>Spoken to a girl</label></li>
+        <li><input type="checkbox" /> <label>Touched a girl</label></li>
+        <li><input type="checkbox" /> <label>Held hands romantically (your homies don't count)</label></li>
+        <li><input type="checkbox" /> <label>Touched a girl's lips</label></li>
+        <li><input type="checkbox" /> <label>Touched a girl's "lips"</label></li>
+      </ol>
+
+      <button type="submit" id="submit">Submit</button>
+      <button type="reset">Reset</button>
     </form>
-    <script>
-        
-        document.getElementById("submit").addEventListener("click", function () {
-            var score = document.querySelectorAll('input[type="checkbox"]:checked').length;
-            localStorage.setItem("score", score);
-        });
-    </script>
+
+    <footer>
+      Made for fun — not affiliated with McGill University.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("submit").addEventListener("click", function () {
+      var score = document.querySelectorAll('input[type="checkbox"]:checked').length;
+      localStorage.setItem("score", score);
+    });
+  </script>
 </body>
 </html>
