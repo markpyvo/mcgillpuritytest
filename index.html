@@ -6,22 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <style>
-    body {
-      background-color: #fcedc7; /* cream background */
-      margin: 0;
-      font-family: "Times New Roman", Times, serif;
-      position: relative;
-      background-image: url("mcgill-university-1-logo-png-transparent.png");
-      background-repeat: repeat;               /* repeats the logo */
-      background-position: center;
-      background-size: 120px auto;            /* adjust logo size */
-    
-      /* Create tilted, semi-transparent effect */
-      transform: rotate(-20deg); /* tilts the whole body */
-      opacity: 0.05;   
-    }
+  body {
+    background-color: #fcedc7;
+    margin: 0;
+    font-family: "Times New Roman", Times, serif;
+    position: relative;
+  }
 
-    .container {
+  body::before {
+    content: "";
+    position: fixed;
+    top: -50px; left: -50px;
+    width: 200%; height: 200%;
+    background-image: url("mcgill-logo.png");
+    background-repeat: repeat;
+    background-size: 150px auto;
+    transform: rotate(-20deg);
+    opacity: 0.05;
+    z-index: 0; /* behind content */
+}
+
+.container {
+    position: relative;
+    z-index: 1; /* bring main content above watermark */
       max-width: 700px;
       margin: 180px auto 60px auto;
       padding: 0 20px;
