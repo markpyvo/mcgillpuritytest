@@ -23,73 +23,73 @@
     background-size: 150px auto;
     transform: rotate(-20deg);
     opacity: 0.05;
-    z-index: 0; /* behind content */
-}
+    z-index: 0;
+  }
 
-.container {
+  .container {
     position: relative;
-    z-index: 1; /* bring main content above watermark */
-      max-width: 700px;
-      margin: 180px auto 60px auto;
-      padding: 0 20px;
-      text-align: left;
-    }
+    z-index: 1;
+    max-width: 700px;
+    margin: 180px auto 60px auto;
+    padding: 0 20px;
+    text-align: left;
+  }
 
-    h1 {
-      text-align: center;
-      color: #b5121b; /* McGill red */
-      font-size: 2.2em;
-      margin-bottom: 0;
-    }
+  h1 {
+    text-align: center;
+    color: #b5121b;
+    font-size: 2.2em;
+    margin-bottom: 0;
+  }
 
-    h2 {
-      text-align: center;
-      font-weight: normal;
-      font-size: 1.1em;
-      margin-top: 5px;
-      color: #555;
-    }
+  h2 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.1em;
+    margin-top: 5px;
+    color: #555;
+  }
 
-    p {
-      text-align: justify;
-      line-height: 1.6;
-      margin-bottom: 25px;
-    }
+  p {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 25px;
+  }
 
-    ol {
-      padding-left: 20px;
-    }
+  ol {
+    padding-left: 30px;
+  }
 
-    li {
-      margin-bottom: 8px;
-    }
+  li {
+    margin-bottom: 8px;
+  }
 
-    label {
-      margin-left: 6px;
-    }
+  input[type="checkbox"] {
+    margin-right: 8px;
+  }
 
-    button {
-      background-color: #b5121b;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      margin-top: 20px;
-      margin-right: 10px;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 1em;
-    }
+  button {
+    background-color: #b5121b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+  }
 
-    button:hover {
-      background-color: #8e0e14;
-    }
+  button:hover {
+    background-color: #8e0e14;
+  }
 
-    footer {
-      text-align: center;
-      color: #888;
-      font-size: 0.9em;
-      margin-top: 50px;
-    }
+  footer {
+    text-align: center;
+    color: #888;
+    font-size: 0.9em;
+    margin-top: 50px;
+  }
   </style>
 </head>
 
@@ -107,117 +107,65 @@
       the evolution of a student at the University of McGill. Check all the items that apply to you:
     </p>
 
-
-    <form action="result.html">
-      <ol>
-          <li>Napped at McLennan/another library</li>
-          <li>Told people to be quiet at the library (you're "that guy" but also i get it)</li>
-          <li>Fallen asleep during a lecture</li>
-          <li>Skipped a lecture because the walk was too far</li>
-          <li>Had a cancelled class or skipped a class because of a strike/protest</li>
-          <li>Had a TA/prof lose your assignment</li>
-          <li>Dropped a class after the first lecture</li>
-          <li>Stayed in Schulich (or another library) past midnight</li>
-          <li>Pulled an all-nighter on campus to study</li>
-          <li>Prayed for a curve just to pass the course</li>
-          <li>Turned in an exam/midterm/assignment with missing pages</li>
-          <li>Faked "technical difficulties" to submit an exam/midterm/assignment late</li>
-          <li>Attended Frosh</li>
-          <li>Been to Activities Night</li>
-          <li>Had a standoff with a McGill squirrel</li>
-          <li>Been ambushed by wasps on campus</li>
-          <li>Regret something you did in Frosh</li>
-          <li>Got lunch from the Hot Dog Man</li>
-          <li>Survived off Uber Eats / eating out during exams</li>
-          <li>Eaten at Lola Rosa to campus</li>
-          <li>Gone to Gerts for cheap drinks</li>
-          <li>Pulled a prank in Rez (ding-dong ditch, etc.)</li>
-          <li>Hooked up with someone in Rez</li>
-          <li>Got lost trying to find someone else's Rez room</li>
-          <li>Got noise complaints (in Rez or not)</li>
-          <li>Slipped on ice on campus</li>
-          <li>Wore winter boots to class</li>
-          <li>Pretended sneakers were fine in January</li>
-          <li>Entered a lecture soaked from snow/rain</li>
-          <li>Skipped class because of a snowstorm</li>
-          <li>Showed up to class in -25°C</li>
-          <li>Had a trip actually make it out of the group chat with people you met at McGill</li>
-          <li>Waited in line at Café Campus</li>
-          <li>Failed to make it out of the pre (drink)</li>
-          <li>Came to McGill because the drinking age is 18</li>
-          <li>Got kicked out of a bar on Crescent/St-Laurent</li>
-          <li>Spent a night at Rouge or Apt. 200</li>
-          <li>Been to a house party in the Plateau</li>
-          <li>Been to a house party in the Ghetto</li>
-          <li>Walked home at sunrise after a night out</li>
-          <li>Blacked out from drinking</li>
-          <li>Attended OAP</li>
-          <li>Attended OAP twice in the same week</li>
-          <li>Attended a SSMU event you didn't understand but it had free food so...</li>
-          <li>Went way too hard at Blues</li>
-          <li>Attended a McGill football game</li>
-          <li>Gone to the Tam Tams on Mount Royal</li>
-          <li>Joined a fraternity or sorority (... no comment)</li>
-          <li>Made it on McGill Spotted</li>
-          <li>Visited the lookout on Mount Royal</li>
-          <li>Still talk to people from your Frosh group</li>
-          <li>Passed on a date with someone cute because you didn't want to speak French</li>
-          <li>Went on a date with a francophone just to practice your French</li>
-          <li>Been offered weed/shrooms/etc on Mount Royal</li>
-          <li>Biked on Sherbrooke during rush hour (it's a death wish)</li>
-          <li>Bragged about being bilingual but only ever ordered "un café, s'il vous plaît"</li>
-          <li>Crashed a Bixi while drunk</li>
-          <li>Used ChatGPT during an online exam</li>
-          <li>Written an exam on &lt; 4 hours of sleep</li>
-          <li>Walked into the wrong exam room</li>
-          <li>Paid / got paid to do someone's assignment/quiz/exam</li>
-          <li>Copied off someone during a quiz/exam</li>
-          <li>Left an exam crying</li>
-          <li>Forgotten about a midterm until the day of</li>
-          <li>Written a paper the night before it was due</li>
-          <li>Had back to back finals (why does McGill do this to us)</li>
-          <li>Had your laptop crash during finals</li>
-          <li>Failed a course</li>
-          <li>Failed a course TWICE</li>
-          <li>Dated someone from another university</li>
-          <li>Gone on a date on St-Laurent</li>
-          <li>Gone on a date in Jeanne Mance park</li>
-          <li>Hooked up during Frosh</li>
-          <li>Had 3+ dating apps downloaded at the same time (crazy work)</li>
-          <li>Matched with a classmate on Tinder</li>
-          <li>Had a library crush</li>
-          <li>Used ChatGPT in a dating context (e.g., to write the perfect message, Tinder bio, etc.)</li>
-          <li>Joined a student club because someone cute was in it</li>
-          <li>Travelled in terrible winter conditions for a hookup (you are down bad...)</li>
-          <li>Shot your shot (or received a shot) on Zoom (you are REALLY down bad...)</li>
-          <li>Fell hard for a matcha-loving, performative male or a pick-me girl</li>
-          <li>Experimented (sexually) with another McGill student</li>
-          <li>Hooked up with someone in your program</li>
-          <li>Got heart-broken by the idea of a French student (cigarettes don't actually taste that good??)</li>
-          <li>Had a relationship start and end in one semester</li>
-          <li>Been ghosted by another McGill student</li>
-          <li>Been walked in on by a roommate</li>
-          <li>Heard your roommate through the wall</li>
-          <li>Done "stuff" on campus (you're a freak)</li>
-          <li>Had a situationship that lasted the entire school year</li>
-          <li>Got heartbroken when an exchange student left &lt;/3</li>
-          <li>Used McGill wifi to sext (kinda diabolical)</li>
-          <li>Got an STI</li>
-          <li>Had a pregnancy scare</li>
-          <li>Had an actual pregnancy</li>
-          <li>Made out in an alleyway in the Ghetto</li>
-          <li>Did more than just make out in an alleyway in the Ghetto (you're wild...)</li>
-          <li>Had a crush on a TA/prof</li>
-          <li>Hooked up with a TA or prof (yikes)</li>
-          <li>Dated a TA or prof (really yikes)</li>
-    </ol>
-      
     <form id="purity-form" action="result.html">
-
+      <ol>
+        <!-- each line below includes a checkbox -->
+        <li><input type="checkbox" id="q1"><label for="q1">Napped at McLennan/another library</label></li>
+        <li><input type="checkbox" id="q2"><label for="q2">Told people to be quiet at the library (you're "that guy" but also i get it)</label></li>
+        <li><input type="checkbox" id="q3"><label for="q3">Fallen asleep during a lecture</label></li>
+        <li><input type="checkbox" id="q4"><label for="q4">Skipped a lecture because the walk was too far</label></li>
+        <li><input type="checkbox" id="q5"><label for="q5">Had a cancelled class or skipped a class because of a strike/protest</label></li>
+        <li><input type="checkbox" id="q6"><label for="q6">Had a TA/prof lose your assignment</label></li>
+        <li><input type="checkbox" id="q7"><label for="q7">Dropped a class after the first lecture</label></li>
+        <li><input type="checkbox" id="q8"><label for="q8">Stayed in Schulich (or another library) past midnight</label></li>
+        <li><input type="checkbox" id="q9"><label for="q9">Pulled an all-nighter on campus to study</label></li>
+        <li><input type="checkbox" id="q10"><label for="q10">Prayed for a curve just to pass the course</label></li>
+        <li><input type="checkbox" id="q11"><label for="q11">Turned in an exam/midterm/assignment with missing pages</label></li>
+        <li><input type="checkbox" id="q12"><label for="q12">Faked "technical difficulties" to submit an exam/midterm/assignment late</label></li>
+        <li><input type="checkbox" id="q13"><label for="q13">Attended Frosh</label></li>
+        <li><input type="checkbox" id="q14"><label for="q14">Been to Activities Night</label></li>
+        <li><input type="checkbox" id="q15"><label for="q15">Had a standoff with a McGill squirrel</label></li>
+        <li><input type="checkbox" id="q16"><label for="q16">Been ambushed by wasps on campus</label></li>
+        <li><input type="checkbox" id="q17"><label for="q17">Regret something you did in Frosh</label></li>
+        <li><input type="checkbox" id="q18"><label for="q18">Got lunch from the Hot Dog Man</label></li>
+        <li><input type="checkbox" id="q19"><label for="q19">Survived off Uber Eats / eating out during exams</label></li>
+        <li><input type="checkbox" id="q20"><label for="q20">Eaten at Lola Rosa near campus</label></li>
+        <li><input type="checkbox" id="q21"><label for="q21">Gone to Gerts for cheap drinks</label></li>
+        <li><input type="checkbox" id="q22"><label for="q22">Pulled a prank in Rez</label></li>
+        <li><input type="checkbox" id="q23"><label for="q23">Hooked up with someone in Rez</label></li>
+        <li><input type="checkbox" id="q24"><label for="q24">Got lost trying to find someone else's Rez room</label></li>
+        <li><input type="checkbox" id="q25"><label for="q25">Got noise complaints</label></li>
+        <li><input type="checkbox" id="q26"><label for="q26">Slipped on ice on campus</label></li>
+        <li><input type="checkbox" id="q27"><label for="q27">Wore winter boots to class</label></li>
+        <li><input type="checkbox" id="q28"><label for="q28">Pretended sneakers were fine in January</label></li>
+        <li><input type="checkbox" id="q29"><label for="q29">Entered a lecture soaked from snow/rain</label></li>
+        <li><input type="checkbox" id="q30"><label for="q30">Skipped class because of a snowstorm</label></li>
+        <li><input type="checkbox" id="q31"><label for="q31">Showed up to class in -25°C</label></li>
+        <li><input type="checkbox" id="q32"><label for="q32">Had a trip actually make it out of the group chat with McGill friends</label></li>
+        <li><input type="checkbox" id="q33"><label for="q33">Waited in line at Café Campus</label></li>
+        <li><input type="checkbox" id="q34"><label for="q34">Failed to make it out of the pre (drink)</label></li>
+        <li><input type="checkbox" id="q35"><label for="q35">Came to McGill because the drinking age is 18</label></li>
+        <li><input type="checkbox" id="q36"><label for="q36">Got kicked out of a bar on Crescent/St-Laurent</label></li>
+        <li><input type="checkbox" id="q37"><label for="q37">Spent a night at Rouge or Apt. 200</label></li>
+        <li><input type="checkbox" id="q38"><label for="q38">Been to a house party in the Plateau</label></li>
+        <li><input type="checkbox" id="q39"><label for="q39">Been to a house party in the Ghetto</label></li>
+        <li><input type="checkbox" id="q40"><label for="q40">Walked home at sunrise after a night out</label></li>
+        <li><input type="checkbox" id="q41"><label for="q41">Blacked out from drinking</label></li>
+        <li><input type="checkbox" id="q42"><label for="q42">Attended OAP</label></li>
+        <li><input type="checkbox" id="q43"><label for="q43">Attended OAP twice in the same week</label></li>
+        <li><input type="checkbox" id="q44"><label for="q44">Attended a SSMU event you didn’t understand but it had free food</label></li>
+        <li><input type="checkbox" id="q45"><label for="q45">Went way too hard at Blues</label></li>
+        <li><input type="checkbox" id="q46"><label for="q46">Attended a McGill football game</label></li>
+        <li><input type="checkbox" id="q47"><label for="q47">Gone to the Tam Tams on Mount Royal</label></li>
+        <li><input type="checkbox" id="q48"><label for="q48">Joined a fraternity or sorority</label></li>
+        <li><input type="checkbox" id="q49"><label for="q49">Made it on McGill Spotted</label></li>
+        <li><input type="checkbox" id="q50"><label for="q50">Visited the lookout on Mount Royal</label></li>
+      </ol>
 
       <button type="submit" id="submit">Submit</button>
       <button type="reset">Reset</button>
     </form>
+
     <footer>
       Made for fun — not affiliated with McGill University. (pls dont sue me)
     </footer>
